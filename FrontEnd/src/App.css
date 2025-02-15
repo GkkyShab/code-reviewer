@@ -1,0 +1,101 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  /* height: 100%; */
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  height: calc(100vh - 3rem);
+  overflow: hidden;
+}
+
+main .left,
+main .right {
+  height: 95%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: #000000;
+  position: relative;
+}
+
+.left .code,
+.code pre,
+.code pre code {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: #0c0c0c;
+  overflow: auto;
+  min-height: 710px;
+}
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  background-color: rgb(219, 219, 255);
+  color: #000000;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+}
+
+
+main .right {
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow-y: auto; 
+  overflow-x: hidden; 
+  height: 100%;
+}
+
+main .left {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: #a855f7;
+; 
+}
+
+.review {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review:hover {
+  background: linear-gradient(135deg, #a855f7, #d946ef);
+  transform: scale(1.05);
+}
